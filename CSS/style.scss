@@ -1,0 +1,87 @@
+@import "./variables.scss";
+//base
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: $bodyfont;
+    background-color: $bodycolor;
+    h1 {
+        text-align: center;
+        font-family: $bodyfont;
+        background-color: $penducolor;
+        border: 2px solid #7D7F80 ;
+        border-radius: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    table {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 50px;
+        margin-top: 10px;
+        padding-top: 20px;
+        border: 1px solid #7D7F80;
+        border-radius: 5px;
+      
+    }
+    .container1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 10px;
+       
+    }
+    
+   #Nouveaujeu{
+       a {
+        text-decoration: none;
+        align-items: center;
+        border: 1px solid #7D7F80;
+        border-radius: 10px;
+        background-color: $penducolor;
+        font-family: $bodyfont;
+        font-size: 15px;
+        color: #000;
+        width: 100px;
+        height: 50px;
+        margin-left: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-left: 10px;
+       
+      }
+   }
+   
+     #Stop { 
+         a {
+        text-decoration: none;
+        border: 1px solid #7D7F80;
+        border-radius: 10px;
+        background-color: $penducolor;
+        font-family: $bodyfont;
+        font-size: 20px;
+        color: #000;
+        width: 100px;
+        height: 50px;
+        margin-left: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-left: 30px;
+        padding-top: 10px;
+        }
+    }
+    .slider {
+        border: 3px solid #7D7F80;
+        border-radius: 10px;
+        background-color: #fff;
+        height: 400px ;
+        margin-bottom: 15px;
+    }
+   
+    
+    .clavier {
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+}
