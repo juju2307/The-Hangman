@@ -18,14 +18,15 @@
     </div>
   </header>
      <main>
-      <nav class="container1">
-        <id class="Nouveaujeu"> <!--bouton pour une nouvelle partie-->
-           <a href="#">NEW GAME</a>
+      <div class="container1 ">
+        <div class="col-2">
+          <button class="Nouveaujeu" type="button" id="Nouveaujeu" onclick="nouveauJeuBoutton()">NEW GAME</button>    <!--bouton pour une nouvelle partie-->
         </div>
-        <id class="Stop"> <!--bouton pour quitter le jeu-->
-           <a href="#">EXIT</a>
+        <div class="col-2">
+           <button class="Stop" type="button" id="Stop" onclick="exit()">EXIT</button>  <!--bouton pour quitter le jeu-->
         </div>
-      </nav>
+        </div>
+      
       
           <!--<figure>
              <img src="Assets/pendu1.png" alt="potence du pendu"/>
@@ -69,8 +70,8 @@
          </div>
             <section class="Motcaché">
                <div class="row justify-content-center">
-                <table class="col-8">
-                  <div class="col-1">
+                <div class="col-8" id="goodLetters">
+                  <div class="col-1"></div>
                     <td id="n-1">-</td>
                   </div>
                   <div class="col-1">
@@ -88,8 +89,15 @@
                   <div class="col-1">
                     <td id="n-6">-</td>
                   </div>
-                </table>
+                
+                </div>
               </div>
+           </section>
+           <section class="Erreur" id="Erreur">
+             <p>Lettres déjà utilisées:</p>
+             <div class="letterUsed" id="letterUsed">
+
+             </div>
            </section>
        </main>
    
@@ -97,40 +105,41 @@
      <footer>
        <div class="clavier"> <!--Installation du clavier-->
          <div class="row justify-content-center">
-          <button class="col-1 lettreA" type="button" id="a">A</button>
-          <button class="col-1 lettreB" type="button" id="b">B</button>
-          <button class="col-1 lettreC" type="button" id="c">C</button>
-          <button class="col-1 lettreD" type="button" id="d">D</button>
-          <button class="col-1 lettreE" type="button" id="e">E</button>
-          <button class="col-1 lettreF" type="button" id="f">F</button>
+          
+          <button class="col-1 lettre" type="button" id="letter">A</button>
+          <button class="col-1 lettre" type="button" id="letter" >B</button>
+          <button class="col-1 lettre" type="button" id="letter" >C</button>
+          <button class="col-1 lettre" type="button" id="letter" >D</button>
+          <button class="col-1 lettre" type="button" id="letter" >E</button>
+          <button class="col-1 lettre" type="button" id="letter" >F</button>
         </div>
         <div class="row justify-content-center">
-          <button class="col-1 lettreG" type="button" id="g">G</button>
-          <button class="col-1 lettreH" type="button" id="h">H</button>
-          <button class="col-1 lettreI" type="button" id="i">I</button>
-          <button class="col-1 lettreJ" type="button" id="j">J</button>
-          <button class="col-1 lettreK" type="button" id="k">K</button>
-          <button class="col-1 lettreL" type="button" id="l">L</button>
+          <button class="col-1 lettre" type="button" id="letter" >G</button>
+          <button class="col-1 lettre" type="button" id="letter" >H</button>
+          <button class="col-1 lettre" type="button" id="letter" >I</button>
+          <button class="col-1 lettre" type="button" id="letter" >J</button>
+          <button class="col-1 lettre" type="button" id="letter" >K</button>
+          <button class="col-1 lettre" type="button" id="letter" >L</button>
         </div>
        <div class="row justify-content-center">
-          <button class="col-1 lettreM" type="button" id="m">M</button>
-          <button class="col-1 lettreN" type="button" id="n">N</button>
-          <button class="col-1 lettreO" type="button" id="o">O</button>
-          <button class="col-1 lettreP" type="button" id="p">P</button>
-          <button class="col-1 lettreQ" type="button" id="q">Q</button>
-          <button class="col-1 lettreR" type="button" id="r">R</button>
+          <button class="col-1 lettre" type="button" id="letter" >M</button>
+          <button class="col-1 lettre" type="button" id="letter" >N</button>
+          <button class="col-1 lettre" type="button" id="letter" >O</button>
+          <button class="col-1 lettre" type="button" id="letter" >P</button>
+          <button class="col-1 lettre" type="button" id="letter" >Q</button>
+          <button class="col-1 lettre" type="button" id="letter" >R</button>
         </div>
         <div class="row justify-content-center">
-          <button class="col-1 lettreS" type="button" id="s">S</button>
-          <button class="col-1 lettreT" type="button" id="t">T</button>
-          <button class="col-1 lettreU" type="button" id="u">U</button>
-          <button class="col-1 lettreV" type="button" id="v">V</button>
-          <button class="col-1 lettreW" type="button" id="w">W</button>
-          <button class="col-1 lettreX" type="button" id="x">X</button>
+          <button class="col-1 lettre" type="button" id="letter" >S</button>
+          <button class="col-1 lettre" type="button" id="letter" >T</button>
+          <button class="col-1 lettre" type="button" id="letter" >U</button>
+          <button class="col-1 lettre" type="button" id="letter" >V</button>
+          <button class="col-1 lettre" type="button" id="letter" >W</button>
+          <button class="col-1 lettre" type="button" id="letter">X</button>
         </div>
         <div class="row justify-content-center">
-          <button class="col-1 lettreY" type="button" id="y">Y</button>
-          <button class="col-1 lettreZ" type="button" id="z">Z</button>
+          <button class="col-1 lettre" type="button" id="letter">Y</button>
+          <button class="col-1 lettre" type="button" id="letter">Z</button>
         </div>
         </div>
        </div>
@@ -138,7 +147,7 @@
 
 
 
-    <script type="text/javascript" src="Hangman.js"></script>
+    <script type="text/javascript" src="JS/Hangman.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script> 
 </body>
