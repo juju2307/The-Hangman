@@ -54,7 +54,7 @@ let motscaches = [
     "TABOURET",
     "TRIANGLE",
     "ASCENSEUR",
-    
+
 ];
 
 //let letter = readlineSync.question("Can you put a single letter on the keywoard please?");
@@ -69,6 +69,7 @@ document.getElementById("6").style.display = "none";
 document.getElementById("7").style.display = "none";
 document.getElementById("8").style.display = "none";
 
+let fin = true;
 let wordToGuess = motscaches[Math.floor(Math.random() * motscaches.length)];
 //permet de donner un mot aléatoire parmis la liste
 
@@ -190,8 +191,9 @@ lettresArray.forEach(
 // si non alors on push un underscore
 function YouAreTheWinner(){
      
-    if (GoodAttemp == letterToGuess.length) {
-        document.getElementById("Attemp").innerHTML =" Vous avez gagné! "
+    if (wordCurrent == letterToGuess) {
+        alert(" Vous avez gagné! ");$
+        return;
     }
     console.log(GoodAttemp)
 };
