@@ -98,19 +98,21 @@ lettresArray.forEach(
         lettre.addEventListener("click",function(event) {
           console.log(event.target.innerHTML);
 
-           if (letterToGuess.includes(event.target.innerHTML)=== true) {
+          let letters = event.target.innerHTML;
+
+           if (letterToGuess.includes(letters)=== true) {
 
                 for (x=0; x<letterToGuess.length; x++) {
 
-                    if (letterToGuess[x] === event.target.innerHTML) {
-                 lettersCurrent[x] = event.target.innerHTML;
+                    if (letterToGuess[x] == letters) {
+                 lettersCurrent[x] = letters;
                    ChangeCurrentWord();
                }
             }
            
             }
             else {
-                  lettersWrong.push (event.target.innerHTML);
+                  lettersWrong.push (letters);
                  changeLetterWrong();
                  document.getElementById("letterUsed").innerHTML = wrong;
 

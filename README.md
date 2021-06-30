@@ -5,7 +5,7 @@
  Création d'un jeu du pendu pendant ma formation chez BeCode. Un mot caché est donner de façon aléatoire.  L'utilisateur doit le découvrir en max 8 chances.   
 
 ## Aperçu de ma page
-![Image de ma page du jeu du pendu](Hangman.png)
+![Image de ma page du jeu du pendu](Assets/Hangman.png)
  ## Fonctionnalités
  * Proposition d'un nouveau mot choisi de façon aléatoire
  * clavier virtuel permettant le choix des lettres par l'utilisateur
