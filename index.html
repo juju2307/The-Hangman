@@ -23,50 +23,50 @@
      <main>
       <div class="container1 ">
         <div class="row justify-content-center">
-        <div class="col-1">
+        <div class="col-12 col-md-12 col-lg-1 col-xl-1">
           <button class="Nouveaujeu" type="button" id="Nouveaujeu" onclick="nouveauJeuBoutton()">NEW GAME</button>    <!--bouton pour une nouvelle partie-->
         </div>
-        <div class="col-1">
+        <div class="col-12 col-md-12 col-lg-1 col-xl-1">
            <button class="Stop" type="button" id="Stop" onclick="exit()">EXIT</button>  <!--bouton pour quitter le jeu-->
         </div>
         </div>
       </div>
          <div class="container">
             <div class="row justify-content-center ">
-              <div class=" col-6 ">
+              <div class=" col-10 col-md-10 col-lg-6 ">
                  <div class="slider" id="slider"> 
                    <div class="row justify-content-center">
                    <div class="col-4 ">
                   <figure class="hangman" id="1">
-                    <img src="Assets/pendu1.png" alt="potence du pendu"/>
+                    <img src="Assets/pendu1.png" style="max-width: 100%;height: auto;" alt="potence du pendu"/>
                     <figcaption>Bonne chance!</figcaption>
                   </figure>
                   <figure class="hangman1" id="2">
-                    <img src="Assets/pendu2.png"  alt="potence + tete"/>
+                    <img src="Assets/pendu2.png" style="max-width: 100%;height: auto;" alt="potence + tete"/>
                     <figcaption>Encore un petit effort!</figcaption>
                   </figure>
                   <figure class="hangman2" id="3">
-                    <img src="Assets/pendu3.png" alt="pendu tete + corps">
+                    <img src="Assets/pendu3.png" style="max-width: 100%;height: auto;" alt="pendu tete + corps">
                     <figcaption>Tu peux mieux faire!</figcaption>
                   </figure>
                   <figure class="hangman3" id="4">
-                    <img src="Assets/pendu4.png" alt="pendu tete +corps +bras droit">
+                    <img src="Assets/pendu4.png" style="max-width: 100%;height: auto;" alt="pendu tete +corps +bras droit">
                     <figcaption>Courage!</figcaption>
                   </figure>
                   <figure class="hangman4" id="5">
-                    <img src="Assets/pendu5.png" alt="pendu tete + corps + bras">
+                    <img src="Assets/pendu5.png" style="max-width: 100%;height: auto;" alt="pendu tete + corps + bras">
                     <figcaption>Ne baisse pas les bras!</figcaption>
                   </figure>
                   <figure class ="hangman5" id="6">
-                    <img src="Assets/pendu6.png" alt="pendu tete + corps + jambe droite">
+                    <img src="Assets/pendu6.png" style="max-width: 100%;height: auto;" alt="pendu tete + corps + jambe droite">
                     <figcaption>Ca te semble difficile?</figcaption>
                   </figure>
                   <figure class="hangman6" id="7">
-                    <img src="Assets/pendu7.png"  alt="pendu + tete + bras + jambes">
+                    <img src="Assets/pendu7.png" style="max-width: 100%;height: auto;" alt="pendu + tete + bras + jambes">
                     <figcaption>Allez, tu peux le faire!</figcaption>
                   </figure>
                   <figure class="hangman7" id="8">
-                    <img src="Assets/pendufinal.png" alt="pendu final">
+                    <img src="Assets/pendufinal.png" style="max-width: 100%;height: auto;"alt="pendu final">
                     <figcaption>Dommage! Tu feras mieux la prochaine fois</figcaption>
                   </figure>
                   <span class="Attemp" id="Attemp"></span>
@@ -88,7 +88,7 @@
               </div>
             </div>
 
-           <div class="Erreur">
+           <div class="Erreur col-12">
              <p>Lettres déjà utilisées:</p>
              <div class="letterUsed" id="letterUsed">
 
