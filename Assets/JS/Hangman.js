@@ -86,7 +86,10 @@ window.onload = function(){
     };
      document.getElementById("underscore").innerHTML= wordCurrent;
 
+     let GoodAttemp = 0;
 
+
+//fonction qui place une alert pour dire qu'il a gagné (mais problème de fonctionnement)
 
 //creation du clavier
 let lettres = document.getElementsByClassName("lettre") ;
@@ -106,7 +109,9 @@ lettresArray.forEach(
 
                     if (letterToGuess[x] == letters) {
                  lettersCurrent[x] = letters;
+                 GoodAttemp++
                    ChangeCurrentWord();
+                   console.log(GoodAttemp)
                }
             }
            
@@ -155,16 +160,16 @@ lettresArray.forEach(
 //fonction qui permet de savoir si la lettre proposée fait partie du mot à découvrir
 // si oui alors la lettre est push
 // si non alors on push un underscore
-
 function YouAreTheWinner(){
      
-         if (letterToGuess.length === wordCurrent.length) {
-             return "Vous avez gagné! Félicitations!";
-         }
+    if (GoodAttemp == letterToGuess.length) {
+        document.getElementById("Attemp").innerHTML =" Vous avez gagné! "
+    }
+    console.log(GoodAttemp)
 };
-//fonction qui place une alert pour dire qu'il a gagné (mais problème de fonctionnement)
 
-console.log(YouAreTheWinner());
+
+
 
 function  nouveauJeuBoutton () {
   window.location.reload();
