@@ -19,81 +19,72 @@
   </header>
      <main>
       <div class="container1 ">
-        <div class="col-2">
+        <div class="row justify-content-center">
+        <div class="col-1">
           <button class="Nouveaujeu" type="button" id="Nouveaujeu" onclick="nouveauJeuBoutton()">NEW GAME</button>    <!--bouton pour une nouvelle partie-->
         </div>
-        <div class="col-2">
+        <div class="col-1">
            <button class="Stop" type="button" id="Stop" onclick="exit()">EXIT</button>  <!--bouton pour quitter le jeu-->
         </div>
         </div>
-      
-      
-          <!--<figure>
-             <img src="Assets/pendu1.png" alt="potence du pendu"/>
-             <figcaption>Bonne chance!</figcaption>
-           </figure>
-           <figure>
-             <img src="Assets/pendu2.png" alt="potence + tete"/>
-             <figcaption>Encore un petit effort!</figcaption>
-           </figure>
-           <figure>
-             <img src="Assets/pendu3.png" alt="pendu tete + corps">
-             <figcaption>Tu peux mieux faire!</figcaption>
-           </figure>
-           <figure>
-             <img src="Assets/pendu4.png" alt="pendu tete +corps +bras droit">
-             <figcaption>Courage!</figcaption>
-           </figure>
-           <figure>
-             <img src="Assets/pendu5.png" alt="pendu tete + corps + bras">
-             <figcaption>Ne baisse pas les bras!</figcaption>
-           </figure>
-           <figure>
-             <img src="Assets/pendu6.png" alt="pendu tete + corps + jambe droite">
-             <figcaption>Ca te semble difficile?</figcaption>
-           </figure>
-           <figure>
-             <img src="Assets/pendu7.png" alt="pendu + tete + bras + jambes">
-             <figcaption>Allez, tu peux le faire!</figcaption>
-           </figure>
-           <figure>
-             <img src="Assets/pendufinal.png" alt="pendu final">
-             <figcaption>Dommage! Tu feras mieux la prochaine fois</figcaption>
-           </figure> --> 
+      </div>
          <div class="container">
             <div class="row justify-content-center ">
-              <div class=" col-6">
-                 <div class="slider"> 
+              <div class=" col-6 ">
+                 <div class="slider" id="slider"> 
+                   <div class="row justify-content-center">
+                   <div class="col-4 ">
+                  <figure class="hangman" id="1">
+                    <img src="Assets/pendu1.png" alt="potence du pendu"/>
+                    <figcaption>Bonne chance!</figcaption>
+                  </figure>
+                  <figure class="hangman1" id="2">
+                    <img src="Assets/pendu2.png"  alt="potence + tete"/>
+                    <figcaption>Encore un petit effort!</figcaption>
+                  </figure>
+                  <figure class="hangman2" id="3">
+                    <img src="Assets/pendu3.png" alt="pendu tete + corps">
+                    <figcaption>Tu peux mieux faire!</figcaption>
+                  </figure>
+                  <figure class="hangman3" id="4">
+                    <img src="Assets/pendu4.png" alt="pendu tete +corps +bras droit">
+                    <figcaption>Courage!</figcaption>
+                  </figure>
+                  <figure class="hangman4" id="5">
+                    <img src="Assets/pendu5.png" alt="pendu tete + corps + bras">
+                    <figcaption>Ne baisse pas les bras!</figcaption>
+                  </figure>
+                  <figure class ="hangman5" id="6">
+                    <img src="Assets/pendu6.png" alt="pendu tete + corps + jambe droite">
+                    <figcaption>Ca te semble difficile?</figcaption>
+                  </figure>
+                  <figure class="hangman6" id="7">
+                    <img src="Assets/pendu7.png"  alt="pendu + tete + bras + jambes">
+                    <figcaption>Allez, tu peux le faire!</figcaption>
+                  </figure>
+                  <figure class="hangman7" id="8">
+                    <img src="Assets/pendufinal.png" alt="pendu final">
+                    <figcaption>Dommage! Tu feras mieux la prochaine fois</figcaption>
+                  </figure> 
+                </div>
                  </div>
+                </div>
              </div> 
             </div>
          </div>
+         <div class="row justify-content-center">
+          <div class="col-6" id="goodLetters">
             <section class="Motcaché">
-               <div class="row justify-content-center">
-                <div class="col-8" id="goodLetters">
-                  <div class="col-1"></div>
-                    <td id="n-1">-</td>
+              <div class="row justify-content-center">
+                 <div class="col-3 ">
+                    <span id="underscore"></span>
                   </div>
-                  <div class="col-1">
-                    <td id="n-2">-</td>
-                  </div>
-                  <div class="col-1">
-                    <td id="n-3">-</td>
-                  </div>
-                  <div class="col-1">
-                    <td id="n-4">-</td>
-                  </div>
-                  <div class="col-1">
-                    <td id="n-5">-</td>
-                  </div>
-                  <div class="col-1">
-                    <td id="n-6">-</td>
-                  </div>
-                
-                </div>
+                 </div>
+               </section>
               </div>
-           </section>
-           <section class="Erreur" id="Erreur">
+            </div>
+
+           <section class="Erreur">
              <p>Lettres déjà utilisées:</p>
              <div class="letterUsed" id="letterUsed">
 
