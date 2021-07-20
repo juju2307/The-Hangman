@@ -88,6 +88,9 @@ let lettersCurrent = [];
 window.onload = function(){
     console.log(wordToGuess)
     }
+
+
+   
 //fonction qui permet de donner un nouveau mot à l'ouverture de la fenêtre
     function ChangeCurrentWord() {
         wordCurrent = "";
@@ -136,15 +139,17 @@ lettresArray.forEach(
 
                 for (x=0; x<letterToGuess.length; x++) {
 
+                    
                     if (letterToGuess[x] == letters) {
                  lettersCurrent[x] = letters;
                  GoodAttemp++
-                   ChangeCurrentWord();
-                   console.log(GoodAttemp)
+                  ChangeCurrentWord();
+                  YouAreTheWinner();
+                  return;
+                 
                }
             }
-           
-            }
+           }
             else {
                   lettersWrong.push (letters);
                  changeLetterWrong();
@@ -189,17 +194,14 @@ lettresArray.forEach(
 //fonction qui permet de savoir si la lettre proposée fait partie du mot à découvrir
 // si oui alors la lettre est push
 // si non alors on push un underscore
+
 function YouAreTheWinner(){
      
-    if (wordCurrent == letterToGuess) {
-        alert(" Vous avez gagné! ");$
-        return;
+    if (letterToGuess === wordToGuess) {
+        document.getElementById("slider").innerHTML = "Bravo vous avez gagné!";
     }
-    console.log(GoodAttemp)
+  
 };
-
-
-
 
 function  nouveauJeuBoutton () {
   window.location.reload();
